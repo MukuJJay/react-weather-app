@@ -1,13 +1,119 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* scrollbar  */
+::-webkit-scrollbar {
+  width: 4px;
+}
+/* mobile scroll control */
+.body {
+  -webkit-overflow-scrolling: touch;
+  overflow: hidden;
+}
+ 
+/* ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0);
+} */
+ 
+::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+  border-radius: 6px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* reset css  */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* global styles */
+*{
+  box-sizing: border-box;
+}
+
+.bg{
+  background-color: #212121;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  width: 100vw;
+  height: 100vh;
+}
+
+/* typography */
+.fs-50{
+  font-size: 50px;
+}
+.fs-30{
+  font-size: 30px;
+}
+.fs-20{
+  font-size: 20px;
+}
+.fs-16{
+  font-size: 16px;
+}
+.fs-14{
+  font-size: 14px;
+}
+
+.text{
+  color: #ffffff;
+}
+
+/* ==================main-content code================== */
+.container{
+  background: linear-gradient(168.44deg, #2E335A 1.62%, #1C1B33 95.72%);
+  width: 800px;
+  min-height: -webkit-fill-available;
+  font-family: 'Lato', sans-serif;
+  padding: 20px;
+  overflow: hidden;
+}
+@media(max-width: 768px){
+  .container{
+    width: 100vw;
+  }
 }
