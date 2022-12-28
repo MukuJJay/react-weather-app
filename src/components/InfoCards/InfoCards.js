@@ -21,7 +21,6 @@ const InfoCards = ({card, setCard, cardEnd}) => {
                 <span className='text fs-14'>Weather : <span className='weather'>{weather}</span></span>
                 <span className='text fs-14'>Humidity : <span className='humidity'>{humidity}</span></span>
                 <span className='text fs-14'>Country Code : <span className='country'>{country}</span></span>
-                <span className='text fs-14'>Time : <span className='hours'>{time.getHours()}</span>:<span className='mins'>{time.getMinutes()}</span> IST</span>
               </div>
               <div className='weather-con'><img src={require(`../../assets/icons/${iconId}.png`)}alt='purple_background'/></div>
               <div className='del-con'><img src={require('../../assets/Delete.svg').default} alt="delete_icon" onClick={()=> delCard(ind)}/></div>
